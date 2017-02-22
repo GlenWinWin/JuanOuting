@@ -11,6 +11,16 @@
 |
 */
 use App\Country;
+use App\User;
+Route::get('/', function()
+{
+    Excel::create('Filename', function($excel) {
+        $excel->sheet('Sheetname', function($sheet) {
+            $users = User::all();
+            $sheet->fromModel($users);
+        });
+    })->download('xls');
+});
 Route::post('bagong_dp', 'UserController@editProfile');
 Route::get('edit_profile',[
   'uses' => 'UserController@profile'

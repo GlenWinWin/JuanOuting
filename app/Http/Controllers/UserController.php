@@ -47,7 +47,7 @@ class UserController extends Controller
         return view('resortsOwners.editprofile');
       }
       public function editProfile(){
-        
+
       }
       public function login(){
         if(Auth::check()){

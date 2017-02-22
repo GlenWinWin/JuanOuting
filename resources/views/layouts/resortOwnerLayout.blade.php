@@ -86,53 +86,36 @@
 <script type="text/javascript" src="assets/js/jquery.min.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
   <script src="assets/js/sidebar.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script>
 <script type="text/javascript">
-new Morris.Line({
-// ID of the element in which to draw the chart.
-element: 'myfirstchart',
-// Chart data records -- each entry in this array corresponds to a point on
-// the chart.
-data: [
-  { year: '2008', value: 20 },
-  { year: '2009', value: 10 },
-  { year: '2010', value: 5 },
-  { year: '2011', value: 5 },
-  { year: '2012', value: 20 }
-],
-// The name of the data record attribute that contains x-values.
-xkey: 'year',
-// A list of names of data record attributes that contain y-values.
-ykeys: ['value'],
-// Labels for the ykeys -- will be displayed when you hover over the
-// chart.
-labels: ['Value']
-});
-Morris.Bar({
-  element: 'bar-example',
-  data: [
-    { y: '2006', a: 100, b: 90 },
-    { y: '2007', a: 75,  b: 65 },
-    { y: '2008', a: 50,  b: 40 },
-    { y: '2009', a: 75,  b: 65 },
-    { y: '2010', a: 50,  b: 40 },
-    { y: '2011', a: 75,  b: 65 },
-    { y: '2012', a: 100, b: 90 }
-  ],
-  xkey: 'y',
-  ykeys: ['a', 'b'],
-  labels: ['Series A', 'Series B']
-});
-Morris.Donut({
-  element: 'donut-example',
-  data: [
-    {label: "Booked", value: 12},
-    {label: "Viewed", value: 30},
-    {label: "Paid", value: 20}
-  ],
-  formatter: function (y, data) { return y + '%'}
-});
+Chart.defaults.global.legend.display = false;
+
+var ctx = document.getElementById("canvasDoughnut");
+
+  var data = {
+    labels: [
+      "Wrong Answers",
+      "Correct Answers"
+    ],
+    datasets: [{
+      data: [34,66],
+      backgroundColor: [
+        "#FF4949",
+        "#30DC2F"
+      ],
+      hoverBackgroundColor: [
+        "#F55252",
+        "#49E048"
+      ]
+
+    }]
+  };
+
+  var canvasDoughnut = new Chart(ctx, {
+    type: 'doughnut',
+    tooltipFillColor: "rgba(51, 51, 51, 0.55)",
+    data: data
+  });
 </script>
 <script type="text/javascript">
 function readURL(input) {
