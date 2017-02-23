@@ -209,13 +209,13 @@
   </div>
   </body>
   </html>
-  <script type="text/javascript" src="assets/js/jquery.min.js"></script>
-  <script src="assets/js/bootstrap.min.js"></script>
-  <script src="assets/js/header.js"></script>
-  <script type="text/javascript" src="assets/js/jquery-ui.min.js"></script>
-  <script type="text/javascript" src="assets/js/ease.js"></script>
-  <script type="text/javascript" src="assets/js/functions.js"></script>
-  <script type="text/javascript" src="assets/js/search.js"></script>
+  <script type="text/javascript" src="assets/js/jquery/jquery.min.js"></script>
+  <script src="assets/js/bootstrap/bootstrap.min.js"></script>
+  <script src="assets/js/utilities/header.js"></script>
+  <script type="text/javascript" src="assets/js/jquery/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="assets/js/utilities/ease.js"></script>
+  <script type="text/javascript" src="assets/js/utilities/functions.js"></script>
+  <script type="text/javascript" src="assets/js/utilities/search.js"></script>
   <script type="text/javascript">
   $(document).ready(function(){
     $("#resort").autocomplete({
@@ -251,9 +251,9 @@
 
   <script type="text/javascript">
   if (screen && screen.width < 768) {
-    document.write('<script type="text/javascript" src="assets/js/search1.js"><\/script>');
+    document.write('<script type="text/javascript" src="assets/js/utilities/search1.js"><\/script>');
   }
   else {
-    document.write('<script type="text/javascript" src="assets/js/search2.js"><\/script>');
+    document.write('<script type="text/javascript" src="assets/js/utilities/search2.js"><\/script>');
   }
   </script>

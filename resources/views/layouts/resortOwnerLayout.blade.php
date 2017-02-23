@@ -83,51 +83,9 @@
     @yield('body-content')
   </body>
 </html>
-<script type="text/javascript" src="assets/js/jquery.min.js"></script>
-  <script src="assets/js/bootstrap.min.js"></script>
-  <script src="assets/js/sidebar.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script>
-<script type="text/javascript">
-Chart.defaults.global.legend.display = false;
-
-var ctx = document.getElementById("canvasDoughnut");
-
-  var data = {
-    labels: [
-      "Wrong Answers",
-      "Correct Answers"
-    ],
-    datasets: [{
-      data: [34,66],
-      backgroundColor: [
-        "#FF4949",
-        "#30DC2F"
-      ],
-      hoverBackgroundColor: [
-        "#F55252",
-        "#49E048"
-      ]
-
-    }]
-  };
-
-  var canvasDoughnut = new Chart(ctx, {
-    type: 'doughnut',
-    tooltipFillColor: "rgba(51, 51, 51, 0.55)",
-    data: data
-  });
-</script>
-<script type="text/javascript">
-function readURL(input) {
-if (input.files && input.files[0]) {
-    var reader = new FileReader();
-    reader.onload = function (e) {
-        $('#blah').attr('src', e.target.result);
-    }
-    reader.readAsDataURL(input.files[0]);
-}
-}
-$("#imgInp").change(function(){
-  readURL(this);
-});
-</script>
+<script type="text/javascript" src="assets/js/jquery/jquery.min.js"></script>
+<script src="assets/js/bootstrap/bootstrap.min.js"></script>
+<script src="assets/js/file/upload.js"></script>
+<script src="assets/js/utilities/sidebar.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script>
+@yield('graphs')
