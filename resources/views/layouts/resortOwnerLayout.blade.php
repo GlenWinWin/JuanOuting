@@ -6,7 +6,6 @@
         <link href="assets/css/bootstrap.min.css" rel="stylesheet">
          <link rel="stylesheet" href="assets/css/resortOwner.css" media="screen" title="no title" charset="utf-8">
          <link rel="stylesheet" href="assets/fonts/css/font-awesome.min.css" media="screen" title="no title" charset="utf-8">
-         <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
     <title>@yield('title')</title>
   </head>
   <body>
