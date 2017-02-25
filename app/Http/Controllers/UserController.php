@@ -5,10 +5,12 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\User;
+use App\Notifications\SendConfirmationEmail;
 use Auth;
 use App\Role;
 use App\Phone;
 use Hash;
+use Mail;
 use Validator;
 use Session;
 
@@ -29,11 +31,19 @@ class UserController extends Controller
         return view('users.signUp');
       }
       public function signUpProcess(Request $requests){
-        $createAccount = new User;
-        $createAccount->username = $requests->username;
-        $createAccount->password = Hash::make($requests->password);
-        $createAccount->email = $requests->email;
-        $createAccount->save();
+
+        $data = array( 'email' => 'jeysownlopez@gmail.com' ,'name'=>'Lala', 'username' => $requests->username, 'password' => $requests->password , 'from' => 'dazzlingturbo@gmail.com', 'from_name' => 'JuanOuting');
+
+         Mail::send('email.confirmationEmail',['name'=> $data['name'],'username'=>$data['username'],'password'=>$data['password']],function($message) use($data){
+           $message->to($data['email'],$data['name'])->from( $data['from'], $data['from_name'] )->subject('Hello Someone');
+         });
+
+         $createAccount = new User;
+         $createAccount->username = $requests->username;
+         $createAccount->password = Hash::make($requests->password);
+         $createAccount->email = $requests->email;
+         $createAccount->profile_path = 'assets/images/user.png';
+         $createAccount->save();
 
         Session::flash('flash_message','success');
 
