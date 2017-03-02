@@ -14,10 +14,13 @@ use App\Country;
 use App\User;
 use App\Mail\SendConfirmationEmail;
 
+Route::get('pdfview',array('as'=>'pdfview','uses'=>'PdfController@pdfview'));
+Route::get('trip',function(){
+  return view('trip');
+});
 Route::get('get_all_users',function(){
   return view('temp');
 });
-
 Route::get('/', function()
 {
     Excel::create('Filename', function($excel) {
