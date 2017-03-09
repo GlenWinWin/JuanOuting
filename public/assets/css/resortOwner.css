@@ -18,7 +18,7 @@
   background:#444;
 }
 .navbar{
-      min-height: 60px;
+      min-height: 45px;
 }
 .application-row{
   padding-left: 0px;
@@ -48,9 +48,7 @@
   padding-right:0px;
 }
 }
-.navbar-brand{
-  padding:3px 15px;
-}
+
 .navbar-toggle{
       padding: 14px 14px;
 }

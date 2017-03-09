@@ -93,7 +93,7 @@
         <div id="navbar" class="navbar-collapse collapse ">
           <ul class="nav navbar-nav navbar-right">
             <li id="countNotif" style="cursor:pointer">
-              <a style="padding-top: 25px;font-size:17px;" id="anchorNotif" onclick="notifyMe()">
+              <a style="font-size:17px;" id="anchorNotif" onclick="notifyMe()">
                 <div id="noti_Counter">11</div>
                 <i class="fa fa-bell-o" id="numNotif" aria-hidden="true"></i>
               </a>
@@ -104,7 +104,7 @@
               </div>
             </li>
             <li class="dropdown">
-                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="padding-top: 25px;font-size:17px;">Settings<span class="caret"></span></a>
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="font-size:17px;">Settings<span class="caret"></span></a>
                           <ul class="dropdown-menu">
                             <li><a href="edit_profile">Edit Profile</a></li>
                             <li><a href="logout" onclick=" return confirm('Are you sure you want to logout?')">Logout</a></li>

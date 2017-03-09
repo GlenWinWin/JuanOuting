@@ -8,12 +8,12 @@
 <div class="col-lg-9" style="margin-top:15px">
   <center>
     <div class="row">
-      <div class="col-md-7 col-sm-12 col-xs-12">
+      <div class="col-md-3 col-sm-12 col-xs-12">
         <div class="x_panel" style="width:70%;border-color:white;">
           <canvas id="myPieChart" width="400" height="400"></canvas>
         </div>
       </div>
-      <div class="col-md-7 col-sm-12 col-xs-12">
+      <div class="col-md-4 col-sm-12 col-xs-12">
         <div class="x_panel" style="width:70%;border-color:white;">
           <canvas id="myBarChart" width="400" height="400"></canvas>
         </div>
