@@ -15,6 +15,30 @@ use App\User;
 use App\Mail\SendConfirmationEmail;
 
 Route::get('pdfview',array('as'=>'pdfview','uses'=>'PdfController@pdfview'));
+
+Route::get('send_sms',function(){
+  $uname = "channellingsystem@gmail.com";
+  $pword = "ch4n3ll1ng";
+  $info = "1";
+  $test = "0";
+
+  $from = "JuanDerPool";
+  $number = "639173038184";
+  $message = 'HEllo Jason!!';
+  $message = urldecode($message);
+
+  $data = "&username=".$uname."&password=".$pword."&message=".$message."&from=".$from."&number=".$number."&info=".$info."&test=".$test;
+
+  $ch = curl_init('http://www.txtlocal.com/sendsmspost.php');
+        curl_setopt($ch,CURLOPT, true);
+        curl_setopt($ch,CURLOPT_POSTFIELDS, $data);
+        curl_setopt($ch,CURLOPT_RETURNTRANSFER, true);
+  $result = curl_exec($ch);
+  curl_close($ch);
+
+  return 'Sent';
+});
+
 Route::get('trip',function(){
   return view('trip');
 });
