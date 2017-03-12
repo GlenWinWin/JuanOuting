@@ -6,6 +6,7 @@
 
 @section('body-content')
 <div class="col-lg-9" style="margin-top:15px">
+  <center>
   <div id="chatbox">
     <div id="friendslist">
         <div id="topmenu">
@@ -125,6 +126,7 @@
         </div>
 
     </div>
+  </center>
 </div>
 </div>
 @stop

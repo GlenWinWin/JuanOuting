@@ -78,10 +78,7 @@
     }
 
 * { margin: 0px; padding: 0px; }
-body {
-    background: #f0f1f2;
-    font:12px "Open Sans", sans-serif;
-}
+
 emoji{
     display: inline-block;
     height: 18px;
@@ -117,24 +114,22 @@ emoji.funny{background-image: url(http://i.imgur.com/qKia58V.png);}
 }
 #view-code:hover{opacity:1;}
 #chatbox{
-    width:970px;
+    width:90%;
     background:#fff;
     border-radius:6px;
     overflow:hidden;
     height:484px;
-    position:absolute;
 }
 
 #friendslist{
-    position:absolute;
     top:0;
     left:0;
-    width:970px;
+    width:100%;
     height:484px;
 }
 #topmenu{
     height:69px;
-    width:970px;
+    width:100%;
     border-bottom:1px solid #d8dfe3;
 }
 #topmenu span{
@@ -201,8 +196,7 @@ emoji.funny{background-image: url(http://i.imgur.com/qKia58V.png);}
 #search{
     background:#e3e9ed url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/245657/search.png") -11px 0 no-repeat;
     height:60px;
-    width:970px;
-    position:absolute;
+    width:100%;
     bottom:0;
     left:0;
 }
@@ -220,7 +214,7 @@ emoji.funny{background-image: url(http://i.imgur.com/qKia58V.png);}
      outline: 0;
 }
 #chatview{
-    width:970px;
+    width:95%;
     height:484px;
     position:absolute;
     top:0;
@@ -273,7 +267,7 @@ emoji.funny{background-image: url(http://i.imgur.com/qKia58V.png);}
 #chat-messages{
     opacity:0;
     margin-top:30px;
-    width:970px;
+    width:100%;
     height:270px;
     overflow-y:scroll;
     overflow-x:hidden;
@@ -294,7 +288,7 @@ emoji.funny{background-image: url(http://i.imgur.com/qKia58V.png);}
     font-size:12px;
     text-align:center;
     margin:15px 0;
-    width:970px;
+    width:100%;
     display:block;
 }
 #chat-messages div.message{
@@ -359,7 +353,7 @@ div.message.right .corner{
     position:absolute;
     bottom:0;
     right:0px;
-    width:970px;
+    width:90%;
     background:#fff;
     padding-bottm:50px;
 }
@@ -581,11 +575,8 @@ border-radius:6px;
 <script src="assets/js/bootstrap/bootstrap.min.js"></script>
 <script src="assets/js/file/upload.js"></script>
 <script src="assets/js/utilities/sidebar.js"></script>
-<<<<<<< HEAD
 <script src="assets/js/calendar.js"></script>
-=======
 <script src="assets/js/utilities/chat.js"></script>
->>>>>>> 03323bb9e2dd87ed798ca5311f40f66a96d86f4a
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script>
 
 @yield('graphs')
