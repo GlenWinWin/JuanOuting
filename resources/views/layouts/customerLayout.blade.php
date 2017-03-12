@@ -41,8 +41,16 @@
                       <a href="#" data-toggle="modal" data-target="#registerModal">Sign Up</a>
                   </li>
                   <li>
+<<<<<<< HEAD
                       <a href="#" data-toggle="modal" data-target="#loginModal">Log In</a>
 
+=======
+                      @if(Auth::check())
+                        <a href="logout">LOGOUT</a>
+                      @else
+                        <a style="cursor:pointer" data-toggle="modal" data-target="#loginModal">LOGIN</a>
+                      @endif
+>>>>>>> 34e90cad587618c02fe5c71cfe51e0221d623cbd
                   </li>
 
                       </ul>
@@ -119,6 +127,7 @@
             </div>
           </div>
         </div>
+</div>
 </div>
 <div class="container">
     <div class="row deck-row">

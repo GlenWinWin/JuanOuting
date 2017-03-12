@@ -7,19 +7,24 @@
 @section('body-content')
 <div class="col-lg-9" style="margin-top:15px">
   <h1>List of Payments</h1>
-  <table class="table table-bordered">
+  <a href="download_csv_payment" class="btn btn-success">Dowload <i class="fa fa-download" aria-hidden="true"></i></a>
+  <table class="table table-bordered table-hover">
     <tr>
-      <th>Column 1</th>
-      <th>Column 2</th>
-      <th>Column 3</th>
+      <th>Name</th>
+      <th>Amount</th>
+      <th>Date of Payment</th>
+      <th>Mode of Payment</th>
     </tr>
-    @for($i = 0;$i < 10;$i++)
+    @foreach ($payments as $payment)
     <tr>
-      <th>Data {{$i+1}}</th>
-      <th>Data {{$i+1}}</th>
-      <th>Data {{$i+1}}</th>
+      <td>{{ $payment->name }}</td>
+      <td>₱{{ $payment->amount }}</td>
+      <td>{{ $payment->date }}</td>
+      <td>{{ $payment->mode }}</td>
     <tr>
-    @endfor
+    @endforeach
+
   </table>
+
 </div>
 @stop
