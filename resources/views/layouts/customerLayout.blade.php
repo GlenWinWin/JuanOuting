@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="assets/css/styleCustomer.css" media="screen" title="no title">
     <link rel="stylesheet" href="assets/css/jquery-ui.css" media="screen" title="no title">
     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lobster" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+
   </head>
   <body id="page-top">
   <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
@@ -35,14 +38,19 @@
                       <a href="#Maps">Help</a>
                   </li>
                   <li>
-                      <a style="cursor:pointer" data-toggle="modal" data-target="#registerModal">Sign Up</a>
+                      <a href="#" data-toggle="modal" data-target="#registerModal">Sign Up</a>
                   </li>
                   <li>
+<<<<<<< HEAD
+                      <a href="#" data-toggle="modal" data-target="#loginModal">Log In</a>
+
+=======
                       @if(Auth::check())
                         <a href="logout">LOGOUT</a>
                       @else
                         <a style="cursor:pointer" data-toggle="modal" data-target="#loginModal">LOGIN</a>
                       @endif
+>>>>>>> 34e90cad587618c02fe5c71cfe51e0221d623cbd
                   </li>
 
                       </ul>
