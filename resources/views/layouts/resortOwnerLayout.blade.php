@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
         <link href="assets/css/bootstrap.min.css" rel="stylesheet">
          <link rel="stylesheet" href="assets/css/resortOwner.css" media="screen" title="no title" charset="utf-8">
+                  <link rel="stylesheet" href="assets/css/calendar.css" media="screen" title="no title" charset="utf-8">
          <link rel="stylesheet" href="assets/fonts/css/font-awesome.min.css" media="screen" title="no title" charset="utf-8">
          <script src="https://unpkg.com/vue/dist/vue.js"></script>
     <title>@yield('title')</title>
@@ -49,7 +50,7 @@
     }
     h3 {
         display:block;
-        color:#333;
+        color:#696969;
         background:#FFF;
         font-weight:bold;
         font-size:13px;
@@ -171,6 +172,7 @@
 <script src="assets/js/bootstrap/bootstrap.min.js"></script>
 <script src="assets/js/file/upload.js"></script>
 <script src="assets/js/utilities/sidebar.js"></script>
+<script src="assets/js/calendar.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script>
 
 @yield('graphs')

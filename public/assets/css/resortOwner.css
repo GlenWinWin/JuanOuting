@@ -259,7 +259,6 @@ border-color: #0079c3;
   font-weight: 400;
   line-height: 26px;
   font-size: 20px;
-  margin-bottom: 20px;
   padding-right: 0px;
   padding-left: 5px;
 }
@@ -267,11 +266,14 @@ border-color: #0079c3;
   font-weight: 600;
 }
 .dashboard-header-name{
-  font-weight: 500;
-  line-height: 26px;
-  font-size: 22px;
-  margin-bottom: 20px;
-  text-align: center;
+  color: #696969;
+      font-size: 1.4em;
+      position: relative;
+      min-height: 1px;
+      border-bottom: 1px solid #e8e8e8;
+      padding-top: 10px;
+      clear: both;
+      margin-bottom: 10px;
 }
 .sidebar-today{
   line-height: 26px;
@@ -286,4 +288,35 @@ border-color: #0079c3;
   text-align: center;
   margin-right: 5px;
   float:left;padding-top:15px;color:#696969;
+}
+.resort-name{
+    font-weight: 500;
+    line-height: 26px;
+    font-size: 24px;
+}
+.r-review{
+    font-weight: 500;
+    line-height: 26px;
+    padding: 0;
+    font-size: 18px;
+    display: inline;
+    vertical-align: top;
+    float: right;
+    clear: both;
+}
+.r-rating{
+  font-size:1.5em;
+  color:#2f566b;
+  float: right;
+  clear: both;
+}
+@media(max-width:767px){
+  .r-rating,.r-review{
+    float:none;
+    text-align: center;
+    clear: both;
+  }
+  .r-title{
+    text-align: center;
+  }
 }
