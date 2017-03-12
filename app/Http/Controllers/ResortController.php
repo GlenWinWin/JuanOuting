@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Resort;
+use DB;
+use App\Dump;
 
 class ResortController extends Controller
 {
@@ -30,15 +32,18 @@ class ResortController extends Controller
       echo 'Check Out:' .'<b>'. $checkOut.'</b>'.'<br><br>';
       echo 'Pax:' . '<b>'.$pax.'</b>';
 
-
     }
     public function home(){
       return redirect('login');
+    }
+    public function inquiries(){
+      return view('resortsOwners.inquiries');
     }
     public function reservationLists(){
       return view('resortsOwners.calendarOfReservations');
     }
     public function paymentLists(){
-      return view('resortsOwners.paymentList');
+      $paymentzz = Dump::all();
+      return view('resortsOwners.paymentList')->with('payments',$paymentzz);
     }
 }

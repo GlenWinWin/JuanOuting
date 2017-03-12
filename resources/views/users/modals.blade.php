@@ -14,7 +14,7 @@
 				</div>
 
                 <div id="div-forms">
-                    <form id="login-form">
+                  {!! Form::open(array('route' => 'user.store','id'=>'login-form'))!!}
 		                <div class="modal-body">
                       <div class="col-sm-5 login-column">
                          <div class="row">
@@ -22,7 +22,7 @@
                                  <div class="form-group">
                                      <center><label class="header-modal-row">Log In into your account</label></center>
                                      <div class="has-feedback">
-                                       <input type="text" id="login_username" class="input-content" placeholder="Username" required/></input>
+                                       <input type="text" id="login_username" class="input-content" name="username" placeholder="Username" required/>
                                      </div>
                                  </div>
                              </div>
@@ -31,14 +31,14 @@
                              <div class="col-xs-12">
                                  <div class="form-group">
                                      <div class="has-feedback">
-                                       <input type="text" id="login_password" class="input-content" placeholder="Password" required/></input>
+                                       <input type="password" id="login_password" class="input-content" name="password" placeholder="Password" required/>
                                      </div>
                                  </div>
                              </div>
                          </div>
                          <div class="row">
                              <div class="col-xs-12">
-                                 <button class="btn btn-primary btn-lg btn-block login-button pull-right" type="button" style="padding:0px;">Log In</button>
+                                 <button class="btn btn-primary btn-lg btn-block login-button pull-right" type="submit" style="padding:0px;">Log In</button>
                              </div>
                          </div>
 
@@ -91,7 +91,7 @@
 				        <div class="modal-footer">
 
 				        </div>
-                    </form>
+                    {!! Form::close()!!}
                     <!-- End # Login Form -->
 
                 </div>

@@ -12,40 +12,51 @@
 */
 use App\Country;
 use App\User;
+use App\Dump;
 use App\Mail\SendConfirmationEmail;
+use App\Events\ChatEvent;
 
 Route::get('pdfview',array('as'=>'pdfview','uses'=>'PdfController@pdfview'));
 
 Route::get('send_sms',function(){
-  $uname = "channellingsystem@gmail.com";
-  $pword = "ch4n3ll1ng";
-  $info = "1";
-  $test = "0";
-
-  $from = "JuanDerPool";
-  $number = "639173038184";
-  $message = 'HEllo Jason!!';
-  $message = urldecode($message);
-
-  $data = "&username=".$uname."&password=".$pword."&message=".$message."&from=".$from."&number=".$number."&info=".$info."&test=".$test;
-
-  $ch = curl_init('http://www.txtlocal.com/sendsmspost.php');
-        curl_setopt($ch,CURLOPT, true);
-        curl_setopt($ch,CURLOPT_POSTFIELDS, $data);
-        curl_setopt($ch,CURLOPT_RETURNTRANSFER, true);
-  $result = curl_exec($ch);
-  curl_close($ch);
-
   return 'Sent';
 });
+Route::get('download_csv_payment',function(){
+        $paymentzz = Dump::all();
 
+        $csv = \League\Csv\Writer::createFromFileObject(new \SplTempFileObject());
+
+        $csv->insertOne(['name', 'amount', 'date', 'mode']);
+
+        foreach ($paymentzz as $person) {
+            $csv->insertOne($person->toArray());
+        }
+
+        $csv->output('list_of_payments.csv');
+
+});
+
+Route::get('bridge', function() {
+    $pusher = App::make('pusher');
+
+    $pusher->trigger( 'test-channel',
+                      'test-event',
+                      array('text' => 'Preparing the Pusher Laracon.eu workshop!'));
+
+    return view('resortsOwners.inquiries');
+});
+
+Route::get('/pusher', function() {
+    event(new ChatEvent('Hi there Pusher!'));
+    return "Event has been sent!";
+});
 Route::get('trip',function(){
   return view('trip');
 });
 Route::get('get_all_users',function(){
   return view('temp');
 });
-Route::get('/', function()
+Route::get('downloadPaymentAsCSV', function()
 {
     Excel::create('Filename', function($excel) {
         $excel->sheet('Sheetname', function($sheet) {
@@ -69,6 +80,9 @@ Route::get('monitor_reservations',[
 ]);
 Route::get('monitor_payments',[
   'uses' => 'ResortController@paymentLists'
+]);
+Route::get('inquiries',[
+  'uses' => 'ResortController@inquiries'
 ]);
 Route::get('login',[
 	'uses' => 'UserController@login'

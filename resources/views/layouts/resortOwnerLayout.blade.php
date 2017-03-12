@@ -128,6 +128,11 @@
             <i class="fa fa-tachometer"></i>
             Dashboard </a>
           </li>
+          <li>
+    				<a href="inquiries">
+    				<i class="fa fa-commenting"></i>
+    			Inquiries</a>
+    			</li>
     			<li>
     				<a href="home" >
     				<i class="fa fa-bar-chart"></i>
@@ -143,16 +148,6 @@
     				<i class="fa fa-money"></i>
     			Payments</a>
     			</li>
-          <li class="visible-xs visible-md visible-sm" style="cursor:pointer">
-            <a style="padding-top: 25px;font-size:17px;" id="anchorNotifMobile" onclick="notifyMeMobile()">
-              Notifications <i class="fa fa-bell-o badge1" id="numNotifMobile" value="3" aria-hidden="true"></i>
-            </a>
-            <div id="notifications" hidden>
-                  <h3>Notifications</h3>
-                  <div style="height:300px;"></div>
-                  <div class="seeAll"><a href="#">See All</a></div>
-            </div>
-          </li>
           <li class="visible-xs visible-md visible-sm">
             <a href="edit_profile" >
             <i class="fa fa-pencil"></i>

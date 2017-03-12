@@ -38,8 +38,11 @@
                       <a style="cursor:pointer" data-toggle="modal" data-target="#registerModal">Sign Up</a>
                   </li>
                   <li>
-                      <a style="cursor:pointer" data-toggle="modal" data-target="#loginModal">Log In</a>
-
+                      @if(Auth::check())
+                        <a href="logout">LOGOUT</a>
+                      @else
+                        <a style="cursor:pointer" data-toggle="modal" data-target="#loginModal">LOGIN</a>
+                      @endif
                   </li>
 
                       </ul>
@@ -116,6 +119,7 @@
             </div>
           </div>
         </div>
+</div>
 </div>
 <div class="container">
     <div class="row deck-row">
