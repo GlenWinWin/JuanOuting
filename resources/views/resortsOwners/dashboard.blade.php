@@ -5,7 +5,7 @@
 @stop
 
 @section('body-content')
-<div class="col-lg-9" style="margin-top:30px">
+<div class="col-lg-9 body-container" style="margin-top:30px;">
   <div>
     <div class="r-title">
       <div class="col-sm-6 deck" >

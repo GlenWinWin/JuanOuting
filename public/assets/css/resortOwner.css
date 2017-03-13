@@ -320,3 +320,12 @@ border-color: #0079c3;
     text-align: center;
   }
 }
+@media(min-width:1300px){
+  .sidebar-container{
+    width: 22%;
+  }
+  .body-container{
+    width: 78%;
+  }
+
+}

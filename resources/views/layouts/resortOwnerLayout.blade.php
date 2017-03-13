@@ -114,7 +114,7 @@ emoji.funny{background-image: url(http://i.imgur.com/qKia58V.png);}
 }
 #view-code:hover{opacity:1;}
 #chatbox{
-    width:90%;
+    width:100%;
     background:#fff;
     border-radius:6px;
     overflow:hidden;
@@ -353,7 +353,7 @@ div.message.right .corner{
     position:absolute;
     bottom:0;
     right:0px;
-    width:90%;
+    width:100%;
     background:#fff;
     padding-bottm:50px;
 }
@@ -416,7 +416,7 @@ div.message.right .corner{
             transition: all 250ms ease-in-out;
 }
 .cx.s1, .cy.s1{
-    right:0;
+    right:5px;
     width:20px;
     -webkit-transition: all 100ms ease-out;
        -moz-transition: all 100ms ease-out;
@@ -445,7 +445,7 @@ div.message.right .corner{
             transition: all 100ms ease-out;
 }
 .cx.s1{
-    right:0;
+    right:5px;
     width:20px;
     -webkit-transition: all 100ms ease-out;
        -moz-transition: all 100ms ease-out;
@@ -491,7 +491,7 @@ border-radius:6px;
                 <span class="icon-bar"></span>
         </a>
           <a class="navbar-brand" href="home">
-            JuanOuting
+            JuanderPool
           </a>
         </div>
         <div id="navbar" class="navbar-collapse collapse ">
@@ -519,7 +519,7 @@ border-radius:6px;
         </div>
       </div>
     </nav>
-    	<div class=" col-lg-3">
+    	<div class=" col-lg-3 sidebar-container" >
     	<div id="sidebar-wrapper" class="sidebar-toggle">
     			<div class="profile-usertitle">
     				<div class="profile-usertitle-name">
