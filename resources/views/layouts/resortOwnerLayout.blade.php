@@ -577,6 +577,8 @@ border-radius:6px;
 <script src="assets/js/utilities/sidebar.js"></script>
 <script src="assets/js/calendar.js"></script>
 <script src="assets/js/utilities/chat.js"></script>
+
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script>
 
 @yield('graphs')

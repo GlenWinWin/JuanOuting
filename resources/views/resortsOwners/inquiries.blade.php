@@ -6,6 +6,15 @@
 
 @section('body-content')
 <div class="col-lg-9 body-container" style="margin-top:15px">
+  <div class="r-title">
+    <div class="col-sm-12 deck" >
+      <div class="resort-name">
+        Inquiries
+      </div>
+    </div>
+    <div class="dashboard-header-name">
+    </div>
+  </div>
   <center>
   <div id="chatbox">
     <div id="friendslist">
