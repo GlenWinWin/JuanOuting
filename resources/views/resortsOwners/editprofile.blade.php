@@ -5,7 +5,7 @@ Edit Profile
 @stop
 
 @section('body-content')
-<div class="col-lg-9">
+<div class="col-lg-9 body-container">
   <center>
     <div class="form-title-row">
         <h1>Edit Profile</h1>

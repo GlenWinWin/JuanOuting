@@ -5,7 +5,7 @@
 @stop
 
 @section('body-content')
-<div class="col-lg-9" style="margin-top:15px">
+<div class="col-lg-9 body-container" style="margin-top:15px">
   <center>
   <div id="chatbox">
     <div id="friendslist">
@@ -68,8 +68,9 @@
         </div>
 
     </div>
-
-    <div id="chatview" class="p1">
+  </center>
+  <center>
+    <div id="chatview" class="p1" style="width:100%;padding-left:8px;padding-right:8px;">
         <div id="profile">
 
             <div id="close">

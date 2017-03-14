@@ -5,7 +5,7 @@
 @stop
 
 @section('body-content')
-<div class="col-lg-9" style="margin-top:15px">
+<div class="col-lg-9 body-container" style="margin-top:15px">
   <h1>List of Payments</h1>
   <a href="download_csv_payment" class="btn btn-success">Dowload <i class="fa fa-download" aria-hidden="true"></i></a>
   <table class="table table-bordered table-hover">
