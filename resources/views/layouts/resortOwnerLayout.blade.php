@@ -9,6 +9,7 @@
          <link rel="stylesheet" href="assets/fonts/css/font-awesome.min.css" media="screen" title="no title" charset="utf-8">
          <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
          <script src="https://unpkg.com/vue/dist/vue.js"></script>
+         <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lobster">
     <title>@yield('title')</title>
     <style media="screen">
     #noti_Counter {
@@ -491,7 +492,7 @@ border-radius:6px;
                 <span class="icon-bar"></span>
         </a>
           <a class="navbar-brand" href="home">
-            JuanderPool
+            <a class="navbar-brand page-scroll" href="index.php" style="color:#fff ;font-family:Lobster;font-weight:600;font-size:30px;">JuanderPool</a>
           </a>
         </div>
         <div id="navbar" class="navbar-collapse collapse ">
