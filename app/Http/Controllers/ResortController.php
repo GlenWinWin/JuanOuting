@@ -42,6 +42,9 @@ class ResortController extends Controller
     public function reservationLists(){
       return view('resortsOwners.calendarOfReservations');
     }
+    public function analytics(){
+      return view('resortsOwners.analytics');
+    }
     public function paymentLists(){
       $paymentzz = Dump::all();
       return view('resortsOwners.paymentList')->with('payments',$paymentzz);

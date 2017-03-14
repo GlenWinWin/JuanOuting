@@ -538,7 +538,7 @@ border-radius:6px;
     			Inquiries</a>
     			</li>
     			<li>
-    				<a href="home" >
+    				<a href="analytics" >
     				<i class="fa fa-bar-chart"></i>
     				Analytics </a>
     			</li>
