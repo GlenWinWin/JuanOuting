@@ -91,7 +91,7 @@
   </style>
   <body>
     <div class="col-lg-2">
-      <img src="assets/images/profile_pictures/glen.jpg" width="140" height="80">
+      <img src="assets/images/juanouting.png" width="140" height="50">
 
     </div>
     <div class="col-lg-10">
