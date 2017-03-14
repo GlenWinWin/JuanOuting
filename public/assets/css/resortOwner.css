@@ -266,7 +266,7 @@ border-color: #0079c3;
   font-weight: 600;
 }
 .dashboard-header-name{
-  color: #696969;
+  color: #333;
       font-size: 1.4em;
       position: relative;
       min-height: 1px;
@@ -274,6 +274,9 @@ border-color: #0079c3;
       padding-top: 10px;
       clear: both;
       margin-bottom: 10px;
+}
+th{
+  color: #333;
 }
 .sidebar-today{
   line-height: 26px;
@@ -293,6 +296,7 @@ border-color: #0079c3;
     font-weight: 500;
     line-height: 26px;
     font-size: 24px;
+    color: #333;
 }
 .r-review{
     font-weight: 500;
@@ -334,9 +338,9 @@ border-color: #0079c3;
 .legend li { display: inline-block;margin-right: 5px; }
 .legend span { float: left; width: 12px; height: 12px; margin: 2px; }
 /* your colors */
-.legend .juanderpool { background-color: #ff6384; }
-.legend .direct { background-color: #ffce56; }
-.legend .walkin { background-color: #36a2eb; }
+.legend .juanderpool { background-color: #4daf4a; }
+.legend .direct { background-color: #377eb8; }
+.legend .walkin { background-color: #ff7f00; }
 
 
 .tab-wrap {
@@ -387,11 +391,14 @@ input[type="radio"][name="tabs"]:first-of-type:checked ~ .slide {
   transition: color 0.2s ease;
   width: 100%;
 }
-
+.label-header:hover{
+  color: #fff;
+}
 .slide {
-  background: #0079c3;
+  background: #2962FF;
   width: calc(100% / 2);
   height: 4px;
+  margin-top: -5px;
   position: absolute;
   left: 0;
   top: calc(100% - 4px);

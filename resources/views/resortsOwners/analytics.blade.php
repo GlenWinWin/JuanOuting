@@ -8,7 +8,7 @@
 <div class="col-lg-9 body-container" style="margin-top:5px;padding-left:0px;padding-right:0px;">
       <div class="tab-wrap">
                       <input type="radio" name="tabs" id="tab1" checked>
-                      <div class="tab-label-content" id="tab1-content">
+                      <div class="tab-label-content tab-label-hover" id="tab1-content">
                         <label class="label-header" for="tab1">Bookings</label>
                         <div class="tab-content">
                           <div class="col-sm-7 col-xs-12">

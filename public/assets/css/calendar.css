@@ -103,13 +103,13 @@ padding-start: 0px;
   display: table-cell;
   float: left;
   position: relative;
-    margin:-2px 0 0 -1px;
+  margin:-1px 0 0 -1px;
   padding: 5px;
   height: 80px;
   overflow-y: auto;
   /*background-image: url("../images/cal.png");*/
  background-size: 100px 100px;
- border: 1px solid #696969;
+ border: 1px solid #2196F3;
 }
 @media(max-width:768px){
   .cld-day{
@@ -122,6 +122,7 @@ padding-start: 0px;
 }
 .cld-day.today{
   background: #448AFF;
+  color: #fff;
 }
 .cld-day.disableDay{
   opacity: 0.5;
@@ -145,6 +146,7 @@ padding-start: 0px;
 .cld-day.eventday{
   font-weight: bold;
   background: #4CAF50;
+  color: #fff;
 }
 .cld-day.eventday:after{
 
