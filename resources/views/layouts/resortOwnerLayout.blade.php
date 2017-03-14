@@ -491,8 +491,8 @@ border-radius:6px;
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
         </a>
-          <a class="navbar-brand" href="home">
-            <a class="navbar-brand page-scroll" href="index.php" style="color:#fff ;font-family:Lobster;font-weight:600;font-size:30px;">JuanderPool</a>
+          <a class="navbar-brand" href="home" style="color:#fff ;font-family:Lobster;font-weight:600;font-size:30px;">
+            JuanderPool
           </a>
         </div>
         <div id="navbar" class="navbar-collapse collapse ">
