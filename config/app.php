@@ -178,10 +178,7 @@ return [
         Collective\Html\HtmlServiceProvider::class,
         'Maatwebsite\Excel\ExcelServiceProvider',
         Barryvdh\DomPDF\ServiceProvider::class,
-<<<<<<< HEAD
 
-=======
->>>>>>> fc887961a08677324407c376044f423126bb76a1
 
     ],
 
