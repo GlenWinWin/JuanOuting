@@ -75,6 +75,9 @@ Route::get('resort',[
 Route::get('home',[
   'uses' => 'ResortController@home'
 ]);
+Route::get('analytics',[
+  'uses' => 'ResortController@analytics'
+]);
 Route::get('monitor_reservations',[
   'uses' => 'ResortController@reservationLists'
 ]);
